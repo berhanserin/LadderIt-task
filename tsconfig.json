@@ -1,0 +1,23 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "strict": true,
+  },
+   "types": [
+      "./src/types/config.d.ts",
+    ],
+  "allowImportingTsExtensions": false,
+  "exclude": [
+    "babel.config.js",
+    "node_modules",
+    "metro.config.js",
+    "jext.config.js",
+    "node_modules", "**/*.test.ts", "__tests__"
+  ]
+}
